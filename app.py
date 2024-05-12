@@ -20,6 +20,7 @@ def display_escons():
         independencia = 'sí'
 
     escons_list = [(k, int(v)) for k, v in diccionari.items()]
+    escons_list = [item for item in escons_list if item[1] != 0]
     return render_template('index.html', llista=escons_list, independencia=independencia, data=time.ctime(), perc_escrutat=perc_escrutat)
 
 if __name__ == '__main__':
