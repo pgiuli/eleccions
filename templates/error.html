@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Es marxa?</title>
+</head>
+<body>
+    <div class="centre">
+        <h1>Resultats de les eleccions en temps real</h1>
+        <h2>Cau independència: N/A.</h2>
+        <p>Temps actual: {{ data }}</p>
+
+        <p>Error en l'obtenció de dades... Ho sento.</p>
+        
+
+        <p>Dades de: <a target="_blank" rel="noopener noreferrer" href="https://ccma.cat">Corporació Catalana de Mitjans Audiovisuals</a> (Bueno, si n'hi haguessin...)</p>
+        <p>Una tonteria feta durant l'escrutini de les eleccions per: <a target="_blank" rel="noopener noreferrer" href="https://giuli.cat">Pau Giuli</a></p>
+        <p><a target="_blank" rel="noopener noreferrer" href="https://github.com/pgiuli/escrutini">Repositori a GitHub</a></p>
+    </div>
+</body>
+</html>
