@@ -8,7 +8,6 @@ app = Flask(__name__)
 @app.route('/') #Use template to display the list
 def display_escons():
     diccionari = escons.get_escons()
-    diccionari = 'Error'
     if diccionari == 'Error':
         return render_template('error.html', data=time.ctime())
 
