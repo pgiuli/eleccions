@@ -18,9 +18,11 @@ def get_escons():
         for item in data['datos']['geo']['opcions']['item']:
             id_mnumitems_dict[item['id']] = item['mnumitems']
 
+        perc_escrutat = data['datos']['geo']['perc_escrutat']
+
 
         diccionari = id_mnumitems_dict
-        return diccionari
+        return diccionari, perc_escrutat
     except:
         return 'Error'
         
